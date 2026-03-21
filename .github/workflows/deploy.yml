@@ -23,8 +23,14 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to IPFS via Pinata
-        uses: ipshipyard/ipfs-deploy-action@v1
+      - name: Pin to IPFS via Pinata
+        uses: anantaramdas/ipfs-pinata-deploy-action@v1.6.4
+        id: pinata
         with:
-          path: dist
-          pinata-jwt: ${{ secrets.PINATA_JWT }}
+          pin-name: sports-brave-${{ github.sha }}
+          path: ./dist
+          pinata-api-key: ${{ secrets.PINATA_API_KEY }}
+          pinata-secret-api-key: ${{ secrets.PINATA_SECRET_API_KEY }}
+
+      - name: Print IPFS CID
+        run: echo "New CID is ${{ steps.pinata.outputs.hash }}"
