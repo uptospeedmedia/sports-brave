@@ -21,8 +21,7 @@ import { ref, onMounted, onUnmounted, watch } from 'vue'
 import SportTabs from '../components/SportTabs.vue'
 import ScoreCard from '../components/ScoreCard.vue'
 
-const API_KEY = import.meta.env.VITE_BALLDONTLIE_API_KEY
-const BASE_URL = 'https://api.balldontlie.io'
+const PROXY_URL = import.meta.env.VITE_PROXY_URL
 
 const sports = ['NBA', 'MLB', 'EPL']
 const activeSport = ref('NBA')
@@ -122,10 +121,8 @@ async function fetchGames() {
   try {
     const sport = activeSport.value.toLowerCase()
     const dateParam = ['EPL', 'NHL'].includes(activeSport.value) ? `date=${today()}` : `dates[]=${today()}`
-    const url = `${BASE_URL}/${sport}/v1/games?${dateParam}&per_page=30`
-    const res = await fetch(url, {
-      headers: { Authorization: API_KEY }
-    })
+    const url = `${PROXY_URL}?target=balldontlie&path=/${sport}/v1/games&${dateParam}&per_page=30`
+    const res = await fetch(url)
     if (!res.ok) throw new Error(`API error: ${res.status}`)
     const json = await res.json()
     games.value = json.data ?? []
