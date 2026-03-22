@@ -2,97 +2,354 @@
   "US": {
     "name": "United States",
     "services": [
-      { "name": "ESPN+", "url": "https://espnplus.com", "sports": ["NFL", "NBA", "MLB", "NHL", "MLS", "UFC", "F1"] },
-      { "name": "Peacock", "url": "https://peacocktv.com", "sports": ["NFL", "EPL", "WWE"] },
-      { "name": "Paramount+", "url": "https://paramountplus.com", "sports": ["NFL", "Champions League", "NWSL"] },
-      { "name": "Apple TV+", "url": "https://tv.apple.com", "sports": ["MLS", "MLB"] },
-      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "sports": ["NFL", "NBA"] },
-      { "name": "FuboTV", "url": "https://fubo.tv", "sports": ["NFL", "NBA", "MLB", "NHL", "EPL", "F1"] },
-      { "name": "YouTube TV", "url": "https://tv.youtube.com", "sports": ["NFL", "NBA", "MLB", "NHL", "MLS"] },
-      { "name": "DAZN", "url": "https://dazn.com", "sports": ["Boxing", "MMA", "NFL"] }
-    ]
-  },
-  "GB": {
-    "name": "United Kingdom",
-    "services": [
-      { "name": "Sky Sports", "url": "https://skysports.com", "sports": ["EPL", "F1", "NFL", "Boxing", "Cricket"] },
-      { "name": "TNT Sports", "url": "https://tntsports.co.uk", "sports": ["EPL", "Champions League", "UFC", "NBA"] },
-      { "name": "BBC iPlayer", "url": "https://bbc.co.uk/iplayer", "sports": ["Wimbledon", "Olympics", "Athletics"] },
-      { "name": "ITV", "url": "https://itv.com", "sports": ["Rugby World Cup", "Athletics"] },
-      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "sports": ["EPL", "NFL"] },
-      { "name": "DAZN", "url": "https://dazn.com", "sports": ["Boxing", "MMA"] }
-    ]
-  },
-  "AU": {
-    "name": "Australia",
-    "services": [
-      { "name": "Kayo Sports", "url": "https://kayosports.com.au", "sports": ["AFL", "NRL", "F1", "NFL", "NBA", "Cricket"] },
-      { "name": "Foxtel", "url": "https://foxtel.com.au", "sports": ["AFL", "NRL", "Cricket", "EPL", "F1"] },
-      { "name": "ESPN Australia", "url": "https://espn.com.au", "sports": ["NBA", "NFL", "MLB", "NHL"] },
-      { "name": "Paramount+", "url": "https://paramountplus.com/au", "sports": ["A-League", "Champions League"] },
-      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "sports": ["NFL", "NBA"] }
+      { "name": "ESPN+", "url": "https://espnplus.com", "affiliate": true, "sports": ["NFL", "NBA", "MLB", "NHL", "MLS", "UFC", "F1", "College Sports"] },
+      { "name": "FuboTV", "url": "https://fubo.tv", "affiliate": true, "sports": ["NFL", "NBA", "MLB", "NHL", "EPL", "F1", "College Sports"] },
+      { "name": "Peacock", "url": "https://peacocktv.com", "affiliate": true, "sports": ["NFL", "EPL", "WWE", "Olympics"] },
+      { "name": "Paramount+", "url": "https://paramountplus.com", "affiliate": true, "sports": ["NFL", "Champions League", "NWSL", "College Sports"] },
+      { "name": "YouTube TV", "url": "https://tv.youtube.com", "affiliate": true, "sports": ["NFL", "NBA", "MLB", "NHL", "MLS", "College Sports"] },
+      { "name": "Hulu + Live TV", "url": "https://hulu.com/live-tv", "affiliate": true, "sports": ["NFL", "NBA", "MLB", "NHL", "MLS"] },
+      { "name": "DirecTV Stream", "url": "https://directv.com/stream", "affiliate": true, "sports": ["NFL", "NBA", "MLB", "NHL", "College Sports"] },
+      { "name": "Sling TV", "url": "https://sling.com", "affiliate": true, "sports": ["NFL", "NBA", "MLB", "NHL", "EPL"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "NBA"] },
+      { "name": "Apple TV+", "url": "https://tv.apple.com", "affiliate": true, "sports": ["MLS", "MLB"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Boxing", "MMA", "NFL"] },
+      { "name": "NFL+", "url": "https://nfl.com/plus", "affiliate": false, "sports": ["NFL"] },
+      { "name": "NBA League Pass", "url": "https://nba.com/leaguepass", "affiliate": true, "sports": ["NBA"] },
+      { "name": "MLB.TV", "url": "https://mlb.com/tv", "affiliate": true, "sports": ["MLB"] }
     ]
   },
   "CA": {
     "name": "Canada",
     "services": [
-      { "name": "TSN", "url": "https://tsn.ca", "sports": ["NHL", "NFL", "CFL", "NBA", "MLB"] },
-      { "name": "Sportsnet", "url": "https://sportsnet.ca", "sports": ["NHL", "MLB", "NBA", "F1"] },
-      { "name": "DAZN", "url": "https://dazn.com", "sports": ["NFL", "Boxing", "Champions League", "EPL"] },
-      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "sports": ["NFL", "NBA"] },
-      { "name": "Apple TV+", "url": "https://tv.apple.com", "sports": ["MLS", "MLB"] }
+      { "name": "TSN", "url": "https://tsn.ca", "affiliate": true, "sports": ["NHL", "NFL", "CFL", "NBA", "MLB", "Tennis"] },
+      { "name": "Sportsnet", "url": "https://sportsnet.ca", "affiliate": true, "sports": ["NHL", "MLB", "NBA", "F1", "EPL"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["NFL", "Boxing", "Champions League", "EPL", "MMA"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "NBA"] },
+      { "name": "Apple TV+", "url": "https://tv.apple.com", "affiliate": true, "sports": ["MLS", "MLB"] },
+      { "name": "Fubo Canada", "url": "https://fubo.tv/ca", "affiliate": true, "sports": ["NFL", "NBA", "MLB", "NHL", "EPL"] }
     ]
   },
-  "DE": {
-    "name": "Germany",
+  "MX": {
+    "name": "Mexico",
     "services": [
-      { "name": "DAZN", "url": "https://dazn.com", "sports": ["Bundesliga", "Champions League", "NBA", "NFL", "Boxing"] },
-      { "name": "Sky Deutschland", "url": "https://sky.de", "sports": ["Bundesliga", "F1", "NFL", "Golf"] },
-      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "sports": ["NFL", "Champions League"] },
-      { "name": "MagentaSport", "url": "https://magentasport.de", "sports": ["Bundesliga", "NHL", "Basketball"] }
-    ]
-  },
-  "ES": {
-    "name": "Spain",
-    "services": [
-      { "name": "DAZN", "url": "https://dazn.com", "sports": ["La Liga", "Champions League", "Boxing", "MMA"] },
-      { "name": "Movistar+", "url": "https://movistarplus.es", "sports": ["La Liga", "F1", "Champions League"] },
-      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "sports": ["Champions League", "NFL"] }
-    ]
-  },
-  "IT": {
-    "name": "Italy",
-    "services": [
-      { "name": "DAZN", "url": "https://dazn.com", "sports": ["Serie A", "Champions League", "Boxing"] },
-      { "name": "Sky Italia", "url": "https://sky.it", "sports": ["Serie A", "F1", "Champions League", "NBA"] },
-      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "sports": ["Champions League", "NFL"] }
-    ]
-  },
-  "FR": {
-    "name": "France",
-    "services": [
-      { "name": "Canal+", "url": "https://canalplus.com", "sports": ["Ligue 1", "Champions League", "Rugby", "F1"] },
-      { "name": "beIN Sports", "url": "https://beinsports.com", "sports": ["Ligue 1", "La Liga", "EPL"] },
-      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "sports": ["Ligue 1", "NFL"] },
-      { "name": "DAZN", "url": "https://dazn.com", "sports": ["Boxing", "MMA", "NFL"] }
+      { "name": "TUDN", "url": "https://tudn.com", "affiliate": false, "sports": ["Liga MX", "NFL", "Boxing", "Olympics"] },
+      { "name": "Sky Mexico", "url": "https://sky.com.mx", "affiliate": true, "sports": ["Liga MX", "NFL", "NBA", "F1", "Champions League"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] },
+      { "name": "ESPN Mexico", "url": "https://espn.com.mx", "affiliate": true, "sports": ["NFL", "NBA", "MLB", "Champions League"] },
+      { "name": "HBO Max", "url": "https://hbomax.com", "affiliate": true, "sports": ["Boxing", "NBA"] },
+      { "name": "Claro Sports", "url": "https://clarosports.com", "affiliate": false, "sports": ["Liga MX", "Copa MX", "Boxing"] }
     ]
   },
   "BR": {
     "name": "Brazil",
     "services": [
-      { "name": "Globoplay", "url": "https://globoplay.globo.com", "sports": ["Brasileirao", "Copa do Brasil", "Olympics"] },
-      { "name": "ESPN Brasil", "url": "https://espn.com.br", "sports": ["NBA", "NFL", "MLB", "Champions League"] },
-      { "name": "DAZN", "url": "https://dazn.com", "sports": ["Boxing", "MMA"] },
-      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "sports": ["NFL", "Champions League"] }
+      { "name": "Globoplay", "url": "https://globoplay.globo.com", "affiliate": false, "sports": ["Brasileirao", "Copa do Brasil", "Olympics", "NBA"] },
+      { "name": "ESPN Brasil", "url": "https://espn.com.br", "affiliate": true, "sports": ["NBA", "NFL", "MLB", "Champions League", "Boxing"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Boxing", "MMA"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] },
+      { "name": "Cazé TV", "url": "https://cazetv.com.br", "affiliate": false, "sports": ["Brasileirao", "Champions League"] }
+    ]
+  },
+  "AR": {
+    "name": "Argentina",
+    "services": [
+      { "name": "ESPN Argentina", "url": "https://espn.com.ar", "affiliate": true, "sports": ["Liga Profesional", "Champions League", "NBA", "NFL"] },
+      { "name": "Star+", "url": "https://starplus.com", "affiliate": true, "sports": ["Liga Profesional", "Champions League", "UFC", "F1"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] },
+      { "name": "TyC Sports", "url": "https://tycsports.com", "affiliate": false, "sports": ["Liga Profesional", "Boxing", "Tennis"] }
+    ]
+  },
+  "CO": {
+    "name": "Colombia",
+    "services": [
+      { "name": "ESPN Colombia", "url": "https://espn.com.co", "affiliate": true, "sports": ["Liga BetPlay", "Champions League", "NBA", "NFL"] },
+      { "name": "Star+", "url": "https://starplus.com", "affiliate": true, "sports": ["Champions League", "UFC", "F1", "Liga BetPlay"] },
+      { "name": "Claro Sports", "url": "https://clarosports.com", "affiliate": false, "sports": ["Liga BetPlay", "Copa Colombia"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] }
+    ]
+  },
+  "CL": {
+    "name": "Chile",
+    "services": [
+      { "name": "ESPN Chile", "url": "https://espn.cl", "affiliate": true, "sports": ["Primera Division", "Champions League", "NBA", "NFL"] },
+      { "name": "Star+", "url": "https://starplus.com", "affiliate": true, "sports": ["Champions League", "UFC", "F1"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] },
+      { "name": "TNT Sports Chile", "url": "https://tntsports.cl", "affiliate": false, "sports": ["Primera Division", "Champions League", "NBA"] }
+    ]
+  },
+  "PE": {
+    "name": "Peru",
+    "services": [
+      { "name": "ESPN Peru", "url": "https://espn.pe", "affiliate": true, "sports": ["Liga 1", "Champions League", "NBA", "NFL"] },
+      { "name": "Star+", "url": "https://starplus.com", "affiliate": true, "sports": ["Champions League", "UFC", "F1"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] }
+    ]
+  },
+  "CW": {
+    "name": "Curacao",
+    "services": [
+      { "name": "ESPN Caribbean", "url": "https://espn.com", "affiliate": true, "sports": ["NFL", "NBA", "MLB", "Champions League"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "NBA"] },
+      { "name": "Flow Sports", "url": "https://discoveryflow.com", "affiliate": false, "sports": ["NFL", "NBA", "Cricket", "Boxing"] }
+    ]
+  },
+  "JM": {
+    "name": "Jamaica",
+    "services": [
+      { "name": "Flow Sports", "url": "https://discoveryflow.com", "affiliate": false, "sports": ["NFL", "NBA", "Cricket", "Boxing", "EPL"] },
+      { "name": "ESPN Caribbean", "url": "https://espn.com", "affiliate": true, "sports": ["NFL", "NBA", "MLB", "Champions League"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "NBA"] }
+    ]
+  },
+  "TT": {
+    "name": "Trinidad & Tobago",
+    "services": [
+      { "name": "Flow Sports", "url": "https://discoveryflow.com", "affiliate": false, "sports": ["NFL", "NBA", "Cricket", "Boxing", "EPL"] },
+      { "name": "ESPN Caribbean", "url": "https://espn.com", "affiliate": true, "sports": ["NFL", "NBA", "MLB"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "NBA"] }
+    ]
+  },
+  "GB": {
+    "name": "United Kingdom",
+    "services": [
+      { "name": "Sky Sports", "url": "https://skysports.com", "affiliate": true, "sports": ["EPL", "F1", "NFL", "Boxing", "Cricket", "Golf"] },
+      { "name": "TNT Sports", "url": "https://tntsports.co.uk", "affiliate": true, "sports": ["EPL", "Champions League", "UFC", "NBA", "MotoGP"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Boxing", "MMA", "NFL"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["EPL", "NFL", "Tennis"] },
+      { "name": "BBC iPlayer", "url": "https://bbc.co.uk/iplayer", "affiliate": false, "sports": ["Wimbledon", "Olympics", "Athletics", "Six Nations"] },
+      { "name": "ITV", "url": "https://itv.com", "affiliate": false, "sports": ["Rugby World Cup", "Athletics", "Horse Racing"] },
+      { "name": "NOW Sports", "url": "https://nowtv.com/sports", "affiliate": true, "sports": ["EPL", "F1", "Boxing", "Cricket"] },
+      { "name": "Peacock UK", "url": "https://peacocktv.com/uk", "affiliate": true, "sports": ["NFL", "WWE"] }
+    ]
+  },
+  "IE": {
+    "name": "Ireland",
+    "services": [
+      { "name": "Sky Sports Ireland", "url": "https://skysports.com", "affiliate": true, "sports": ["EPL", "GAA", "F1", "Boxing", "Rugby"] },
+      { "name": "Virgin Media Sport", "url": "https://virginmediatelevision.ie", "affiliate": false, "sports": ["EPL", "GAA", "Six Nations", "NFL"] },
+      { "name": "TNT Sports", "url": "https://tntsports.co.uk", "affiliate": true, "sports": ["EPL", "Champions League", "UFC", "NBA"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Boxing", "MMA"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["EPL", "NFL"] },
+      { "name": "RTE Player", "url": "https://rte.ie/player", "affiliate": false, "sports": ["GAA", "Six Nations", "Olympics"] }
+    ]
+  },
+  "DE": {
+    "name": "Germany",
+    "services": [
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Bundesliga", "Champions League", "NBA", "NFL", "Boxing", "MMA"] },
+      { "name": "Sky Deutschland", "url": "https://sky.de", "affiliate": true, "sports": ["Bundesliga", "F1", "NFL", "Golf", "Tennis"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] },
+      { "name": "MagentaSport", "url": "https://magentasport.de", "affiliate": false, "sports": ["Bundesliga", "NHL", "Basketball", "Handball"] },
+      { "name": "Sport1", "url": "https://sport1.de", "affiliate": false, "sports": ["Bundesliga", "NFL", "Darts", "Boxing"] }
+    ]
+  },
+  "FR": {
+    "name": "France",
+    "services": [
+      { "name": "Canal+", "url": "https://canalplus.com", "affiliate": true, "sports": ["Ligue 1", "Champions League", "Rugby", "F1", "Boxing"] },
+      { "name": "beIN Sports", "url": "https://beinsports.com", "affiliate": true, "sports": ["Ligue 1", "La Liga", "EPL", "Tennis"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["Ligue 1", "NFL", "Tennis"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Boxing", "MMA", "NFL"] },
+      { "name": "RMC Sport", "url": "https://rmcsport.bfmtv.com", "affiliate": false, "sports": ["EPL", "Champions League", "UFC", "NBA"] }
+    ]
+  },
+  "ES": {
+    "name": "Spain",
+    "services": [
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["La Liga", "Champions League", "Boxing", "MMA", "NFL"] },
+      { "name": "Movistar+", "url": "https://movistarplus.es", "affiliate": true, "sports": ["La Liga", "F1", "Champions League", "Tennis"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["Champions League", "NFL"] },
+      { "name": "beIN Sports", "url": "https://beinsports.com/es", "affiliate": true, "sports": ["La Liga", "EPL", "Tennis"] }
+    ]
+  },
+  "IT": {
+    "name": "Italy",
+    "services": [
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Serie A", "Champions League", "Boxing", "MMA"] },
+      { "name": "Sky Italia", "url": "https://sky.it", "affiliate": true, "sports": ["Serie A", "F1", "Champions League", "NBA", "Tennis"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["Champions League", "NFL"] },
+      { "name": "Mediaset Infinity", "url": "https://mediasetplay.mediaset.it", "affiliate": false, "sports": ["Serie A", "Champions League"] }
+    ]
+  },
+  "NL": {
+    "name": "Netherlands",
+    "services": [
+      { "name": "Ziggo Sport", "url": "https://ziggosport.nl", "affiliate": false, "sports": ["Eredivisie", "F1", "Champions League", "Tennis"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Boxing", "MMA", "NFL", "Champions League"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] },
+      { "name": "ESPN Netherlands", "url": "https://espn.nl", "affiliate": true, "sports": ["Eredivisie", "NBA", "NFL", "MLB"] }
+    ]
+  },
+  "BE": {
+    "name": "Belgium",
+    "services": [
+      { "name": "Eleven Sports", "url": "https://elevensports.com", "affiliate": true, "sports": ["Pro League", "Champions League", "NBA", "NFL"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Boxing", "MMA", "Champions League"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] },
+      { "name": "Proximus Pickx", "url": "https://proximus.be/pickx", "affiliate": false, "sports": ["Pro League", "F1", "Tennis"] }
+    ]
+  },
+  "PT": {
+    "name": "Portugal",
+    "services": [
+      { "name": "Sport TV", "url": "https://sporttv.pt", "affiliate": false, "sports": ["Primeira Liga", "Champions League", "F1", "Tennis"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Boxing", "MMA", "NFL", "Champions League"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] },
+      { "name": "Eleven Sports Portugal", "url": "https://elevensports.com/pt", "affiliate": true, "sports": ["Primeira Liga", "EPL", "NBA"] }
+    ]
+  },
+  "SE": {
+    "name": "Sweden",
+    "services": [
+      { "name": "Viaplay", "url": "https://viaplay.com", "affiliate": true, "sports": ["Allsvenskan", "NHL", "NFL", "F1", "Champions League"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Boxing", "MMA", "Champions League"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] },
+      { "name": "TV4 Play", "url": "https://tv4play.se", "affiliate": false, "sports": ["Allsvenskan", "NHL", "Tennis"] }
+    ]
+  },
+  "NO": {
+    "name": "Norway",
+    "services": [
+      { "name": "Viaplay", "url": "https://viaplay.com", "affiliate": true, "sports": ["Eliteserien", "NHL", "NFL", "F1", "Champions League"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Boxing", "MMA", "Champions League"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] },
+      { "name": "TV 2 Play", "url": "https://tv2.no/play", "affiliate": false, "sports": ["Eliteserien", "EPL", "Tennis"] }
+    ]
+  },
+  "DK": {
+    "name": "Denmark",
+    "services": [
+      { "name": "Viaplay", "url": "https://viaplay.com", "affiliate": true, "sports": ["Superliga", "NHL", "NFL", "F1", "Champions League"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Boxing", "MMA", "Champions League"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] },
+      { "name": "TV 2 Play Denmark", "url": "https://tv2.dk/play", "affiliate": false, "sports": ["Superliga", "EPL", "Tennis"] }
+    ]
+  },
+  "FI": {
+    "name": "Finland",
+    "services": [
+      { "name": "Viaplay", "url": "https://viaplay.com", "affiliate": true, "sports": ["Veikkausliiga", "NHL", "NFL", "F1", "Champions League"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Boxing", "MMA", "Champions League"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] },
+      { "name": "Ruutu+", "url": "https://ruutu.fi", "affiliate": false, "sports": ["Veikkausliiga", "NHL", "Tennis"] }
+    ]
+  },
+  "PL": {
+    "name": "Poland",
+    "services": [
+      { "name": "Canal+ Poland", "url": "https://canalplus.com/pl", "affiliate": true, "sports": ["Ekstraklasa", "Champions League", "F1", "Tennis"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Boxing", "MMA", "Champions League"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] },
+      { "name": "Eleven Sports Poland", "url": "https://elevensports.com/pl", "affiliate": true, "sports": ["Ekstraklasa", "EPL", "NBA"] }
+    ]
+  },
+  "AT": {
+    "name": "Austria",
+    "services": [
+      { "name": "Sky Austria", "url": "https://sky.at", "affiliate": true, "sports": ["Bundesliga Austria", "F1", "Champions League", "Tennis"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Bundesliga Germany", "Champions League", "Boxing", "MMA"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] }
+    ]
+  },
+  "CH": {
+    "name": "Switzerland",
+    "services": [
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Super League", "Champions League", "Boxing", "MMA", "NFL"] },
+      { "name": "Sky Switzerland", "url": "https://sky.ch", "affiliate": true, "sports": ["Bundesliga", "F1", "Champions League"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] },
+      { "name": "SRF Sport", "url": "https://srf.ch/sport", "affiliate": false, "sports": ["Super League", "Tennis", "Ski"] }
+    ]
+  },
+  "GR": {
+    "name": "Greece",
+    "services": [
+      { "name": "Cosmote TV", "url": "https://cosmote.gr/tv", "affiliate": false, "sports": ["Super League", "Champions League", "NBA", "F1"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Boxing", "MMA", "Champions League"] },
+      { "name": "beIN Sports Greece", "url": "https://beinsports.com/gr", "affiliate": true, "sports": ["Super League", "EPL", "Champions League"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] }
+    ]
+  },
+  "CZ": {
+    "name": "Czech Republic",
+    "services": [
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Champions League", "Boxing", "MMA", "NFL"] },
+      { "name": "Canal+ Czech", "url": "https://canalplus.cz", "affiliate": true, "sports": ["Czech Liga", "Champions League", "F1"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] }
+    ]
+  },
+  "HU": {
+    "name": "Hungary",
+    "services": [
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Champions League", "Boxing", "MMA"] },
+      { "name": "Canal+ Hungary", "url": "https://canalplus.hu", "affiliate": true, "sports": ["OTP Bank Liga", "Champions League", "F1"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] }
+    ]
+  },
+  "RO": {
+    "name": "Romania",
+    "services": [
+      { "name": "DIGI Sport", "url": "https://digisport.ro", "affiliate": false, "sports": ["Superliga", "Champions League", "NBA", "NFL"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Champions League", "Boxing", "MMA"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] }
+    ]
+  },
+  "ZA": {
+    "name": "South Africa",
+    "services": [
+      { "name": "SuperSport", "url": "https://supersport.com", "affiliate": true, "sports": ["Premier League", "Cricket", "Rugby", "EPL", "NFL", "NBA", "F1"] },
+      { "name": "DSTV", "url": "https://dstv.com", "affiliate": true, "sports": ["EPL", "Cricket", "Rugby", "NFL", "NBA"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] },
+      { "name": "beIN Sports", "url": "https://beinsports.com", "affiliate": true, "sports": ["EPL", "La Liga", "Champions League"] }
+    ]
+  },
+  "AU": {
+    "name": "Australia",
+    "services": [
+      { "name": "Kayo Sports", "url": "https://kayosports.com.au", "affiliate": true, "sports": ["AFL", "NRL", "F1", "NFL", "NBA", "Cricket", "Rugby"] },
+      { "name": "Foxtel", "url": "https://foxtel.com.au", "affiliate": true, "sports": ["AFL", "NRL", "Cricket", "EPL", "F1", "NBA"] },
+      { "name": "ESPN Australia", "url": "https://espn.com.au", "affiliate": true, "sports": ["NBA", "NFL", "MLB", "NHL"] },
+      { "name": "Paramount+", "url": "https://paramountplus.com/au", "affiliate": true, "sports": ["A-League", "Champions League", "NFL"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "NBA"] },
+      { "name": "Stan Sport", "url": "https://stan.com.au/sport", "affiliate": true, "sports": ["Rugby", "Tennis", "Cycling"] },
+      { "name": "9Now", "url": "https://9now.com.au", "affiliate": false, "sports": ["NRL", "Cricket", "Tennis"] },
+      { "name": "7Plus", "url": "https://7plus.com.au", "affiliate": false, "sports": ["AFL", "Cricket", "Supercars"] }
+    ]
+  },
+  "NZ": {
+    "name": "New Zealand",
+    "services": [
+      { "name": "Sky Sport NZ", "url": "https://skysport.co.nz", "affiliate": true, "sports": ["All Blacks Rugby", "Cricket", "EPL", "NBA", "NFL", "F1"] },
+      { "name": "Spark Sport", "url": "https://sparksport.co.nz", "affiliate": true, "sports": ["Cricket", "Rugby", "F1", "NBA"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "NBA"] },
+      { "name": "ThreeNow", "url": "https://threenow.co.nz", "affiliate": false, "sports": ["Rugby", "Cricket"] }
+    ]
+  },
+  "IN": {
+    "name": "India",
+    "services": [
+      { "name": "JioCinema", "url": "https://jiocinema.com", "affiliate": false, "sports": ["IPL", "EPL", "NFL", "NBA", "F1", "Champions League"] },
+      { "name": "Disney+ Hotstar", "url": "https://hotstar.com", "affiliate": true, "sports": ["IPL", "Cricket", "EPL", "Kabaddi", "NBA"] },
+      { "name": "Sony LIV", "url": "https://sonyliv.com", "affiliate": false, "sports": ["Cricket", "WWE", "Moto GP", "Tennis"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League", "Cricket"] }
     ]
   },
   "JP": {
     "name": "Japan",
     "services": [
-      { "name": "DAZN Japan", "url": "https://dazn.com", "sports": ["J-League", "Champions League", "NBA", "NFL", "Boxing"] },
-      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "sports": ["NFL", "NBA"] },
-      { "name": "NHK", "url": "https://nhk.or.jp", "sports": ["Olympics", "Sumo", "Athletics"] },
-      { "name": "Fuji TV Next", "url": "https://fujitv.co.jp", "sports": ["F1", "Boxing"] }
+      { "name": "DAZN Japan", "url": "https://dazn.com/ja-JP", "affiliate": true, "sports": ["J-League", "Champions League", "NBA", "NFL", "Boxing", "MMA"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "NBA", "Champions League"] },
+      { "name": "NHK Plus", "url": "https://nhk.or.jp/plus", "affiliate": false, "sports": ["Olympics", "Sumo", "Athletics"] },
+      { "name": "Fuji TV Next", "url": "https://fujitv.co.jp", "affiliate": false, "sports": ["F1", "Boxing"] },
+      { "name": "Rakuten TV", "url": "https://rakuten.tv", "affiliate": true, "sports": ["Baseball NPB", "NBA", "Tennis"] }
+    ]
+  },
+  "SG": {
+    "name": "Singapore",
+    "services": [
+      { "name": "Singtel TV", "url": "https://singtel.com/tv", "affiliate": false, "sports": ["EPL", "F1", "NBA", "NFL", "Cricket"] },
+      { "name": "beIN Sports", "url": "https://beinsports.com/sg", "affiliate": true, "sports": ["EPL", "La Liga", "Champions League", "Tennis"] },
+      { "name": "Amazon Prime Video", "url": "https://primevideo.com", "affiliate": true, "sports": ["NFL", "Champions League"] },
+      { "name": "DAZN", "url": "https://dazn.com", "affiliate": true, "sports": ["Boxing", "MMA", "Champions League"] }
     ]
   }
 }
