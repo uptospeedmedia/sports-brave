@@ -12,6 +12,14 @@
     </div>
 
     <div class="offer">{{ book.offer }}</div>
+<div v-if="odds" class="odds-row">
+  <span class="odds-label">Today's line</span>
+  <span class="odds-values">
+    <span class="odds-val">{{ formatOdds(odds.home) }}</span>
+    <span class="odds-sep">/</span>
+    <span class="odds-val">{{ formatOdds(odds.away) }}</span>
+  </span>
+</div>
 
     <div class="sports-tags">
       <span v-for="sport in book.sports" :key="sport" class="sport-tag">{{ sport }}</span>
@@ -26,7 +34,13 @@
 </template>
 
 <script setup>
-defineProps({ book: Object })
+defineProps({ book: Object, odds: Object })
+
+function formatOdds(val) {
+  if (val === undefined || val === null) return '-'
+  const n = Number(val)
+  return n > 0 ? '+' + n : String(n)
+}
 </script>
 
 <style scoped>
@@ -103,6 +117,37 @@ defineProps({ book: Object })
   padding: 0.6rem 0.8rem;
   border-radius: 8px;
   border-left: 3px solid #e63946;
+}
+
+.odds-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d1017;
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+}
+
+.odds-label {
+  font-size: 0.72rem;
+  color: #6b7280;
+}
+
+.odds-values {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.odds-val {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #4ade80;
+}
+
+.odds-sep {
+  font-size: 0.72rem;
+  color: #4a4d5a;
 }
 
 .sports-tags {
