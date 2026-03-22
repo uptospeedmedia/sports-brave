@@ -92,8 +92,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const API_KEY = import.meta.env.VITE_BALLDONTLIE_API_KEY
-const BASE_URL = 'https://api.balldontlie.io'
+const PROXY_URL = import.meta.env.VITE_PROXY_URL
 
 const featuredGames = ref([])
 const loadingScores = ref(false)
@@ -116,9 +115,8 @@ function getStatusClass(status) {
 async function fetchFeaturedGames() {
   loadingScores.value = true
   try {
-    const res = await fetch(`${BASE_URL}/nba/v1/games?dates[]=${today()}&per_page=6`, {
-      headers: { Authorization: API_KEY }
-    })
+    const res = await fetch(`${PROXY_URL}?target=balldontlie&path=/nba/v1/games&dates[]=${today()}&per_page=6`)
+    
     const json = await res.json()
     featuredGames.value = (json.data ?? []).slice(0, 6)
   } catch (e) {
